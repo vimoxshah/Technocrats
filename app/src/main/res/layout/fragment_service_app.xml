@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="add"
+    android:backgroundTint="#69dbdbdb"
+    android:background="#239d3636">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:scaleType="centerInside"
+            android:src="@drawable/moberp" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:typeface="monospace"
+        android:fontFamily="Roboto-black"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:text="   In the past two years, the app market has exploded. In under 9 months the Apple store reported over a billion downloads, and then doubled that number in half the time. The app craze has spread to Android, Blackberry, and every other mobile market under the sun."
+        />
+
+    <TextView
+        android:typeface="monospace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="Roboto-black"
+        android:textSize="15dp"
+        android:textColor="#000000"
+        android:text="   Much less surprising is the prediction that"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold" />
+
+    <TextView
+        android:fontFamily="Roboto-black"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"
+        android:text=" 1) Androidwill increase its market share from 39.5 percent in 2011 to 45.4 percent in 2015 while becoming the number one smart phone operating system."
+        />
+
+    <TextView
+        android:fontFamily="Roboto-black"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textColor="#000000"
+        android:text=" 2) Apple&apos;siOS market share will remain relatively stable, shifting from 15.7 percent to 15.3 percent and RIM&apos;s BlackBerry OS will drop slightly from 14.9 percent in2011 to 13.7 percent in 2015."
+        />
+
+</LinearLayout>
+    </ScrollView>
+</LinearLayout>

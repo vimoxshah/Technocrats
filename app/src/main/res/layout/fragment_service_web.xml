@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="add"
+    android:backgroundTint="#69dbdbdb"
+    android:background="#239d3636">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/webdev" />
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="textEnd"
+                android:typeface="monospace"
+                android:fontFamily="Roboto-black"
+                android:textSize="15dp"
+                android:textColor="#000000"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="   Our web development service includes web application development, custom CMS development, open source customization and e-commerce website development. Be it any kind of web development."
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="5dp"
+                android:textAlignment="textEnd"
+                android:typeface="monospace"
+                android:fontFamily="Roboto-black"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="   We provide you one-stop solution for all your needs. We produce highly scalable business solutions, with your success as our main objective. Our specialization in Software Development includes, vertical sectors like small to mid-size business, manufacturing industries, insurance agencies, distribution agencies, warehouse managements etc."
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

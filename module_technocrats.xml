@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_technocrats" default="compile.module.technocrats">
+  <dirname property="module.technocrats.basedir" file="${ant.file.module_technocrats}"/>
+  
+  <property name="module.jdk.home.technocrats" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.technocrats" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.technocrats" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.technocrats" value="-encoding windows-1252 -source 1.7 ${compiler.args}"/>
+  
+  <property name="technocrats.output.dir" value="${module.technocrats.basedir}/build/classes/production/Technocrats"/>
+  <property name="technocrats.testoutput.dir" value="${module.technocrats.basedir}/build/classes/test/Technocrats"/>
+  
+  <path id="technocrats.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="technocrats.module.production.classpath">
+    <path refid="${module.jdk.classpath.technocrats}"/>
+  </path>
+  
+  <path id="technocrats.runtime.production.module.classpath">
+    <pathelement location="${technocrats.output.dir}"/>
+  </path>
+  
+  <path id="technocrats.module.classpath">
+    <path refid="${module.jdk.classpath.technocrats}"/>
+    <pathelement location="${technocrats.output.dir}"/>
+  </path>
+  
+  <path id="technocrats.runtime.module.classpath">
+    <pathelement location="${technocrats.testoutput.dir}"/>
+    <pathelement location="${technocrats.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.technocrats">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.technocrats">
+    <patternset refid="excluded.from.module.technocrats"/>
+  </patternset>
+  
+  
+  <target name="compile.module.technocrats" depends="compile.module.technocrats.production,compile.module.technocrats.tests" description="Compile module Technocrats"/>
+  
+  <target name="compile.module.technocrats.production" depends="register.custom.compilers" description="Compile module Technocrats; production classes"/>
+  
+  <target name="compile.module.technocrats.tests" depends="register.custom.compilers,compile.module.technocrats.production" description="compile module Technocrats; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.technocrats" description="cleanup module">
+    <delete dir="${technocrats.output.dir}"/>
+    <delete dir="${technocrats.testoutput.dir}"/>
+  </target>
+</project>
